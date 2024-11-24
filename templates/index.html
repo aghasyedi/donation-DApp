@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <h1>Simple Donation DApp</h1>
+
+    <button id="connect">Connect Wallet</button>
+    <p>Wallet Address: <span id="wallet"></span></p>
+    <p>Balance: <span id="balance"></span> Ether</p>
+
+    <h2>Make a Donation</h2>
+    <input type="number" id="amount" placeholder="Amount in ETH" />
+    <button id="donate">Donate</button>
+    <p id="donateMessage"></p>
+
+    <h2>Check Your Donation</h2>
+    <input type="text" id="checkAddress" placeholder="Enter Wallet Address" />
+    <button id="checkDonation">Check Donation</button>
+    <p id="donationResult"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </body>
+</html>
