@@ -132,3 +132,7 @@ donation-dapp/
 ├── Donation.json          # Bytecode for Solidity Code
 └── README.md             # Project documentation
 ```
+
+## Screenshots
+![01](https://github.com/user-attachments/assets/ed44b693-ef71-4725-9cf6-ca0956358c71)
+![02](https://github.com/user-attachments/assets/09daa045-8024-4c65-8c04-2992a12d3a07)
