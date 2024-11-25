@@ -7,22 +7,52 @@
     <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
   </head>
   <body>
-    <h1>Agha's Donation DApp</h1>
-    <center><b>Wallet ID</b>: 0xBC1D83d2071bcBed8757a4B6Dc4fc5641A9bB28B</center>
-    <br />
-    <button id="connect">Connect Wallet</button>
-    <p>Wallet Address: <span id="wallet"></span></p>
-    <p>Balance: <span id="balance"></span> Ether</p>
+    <h1>Future Minds Foundation</h1>
+    <h2>Empowering Minds, Shaping Futures</h2>
+    <!-- <h4>
+      <center>
+        <pre>
+      The Future Minds Foundation is dedicated to empowering underprivileged youth through
+      education, providing scholarships, resources, and skill development. We aim to create a
+      brighter future by unlocking the potential of tomorrow's leaders.
+      </pre
+        >
+      </center>
+    </h4> -->
+    <!-- <br />
+    <hr /> -->
 
-    <h2>Make a Donation</h2>
-    <input type="number" id="amount" placeholder="Amount in ETH" />
-    <button id="donate">Donate</button>
-    <p id="donateMessage"></p>
+    <center>
+      <button id="connect">Connect Wallet</button>
+      <p id="connectMessage"></p>
+    </center>
 
-    <h2>Check Your Donation</h2>
-    <input type="text" id="checkAddress" placeholder="Enter Wallet Address" />
-    <button id="checkDonation">Check Donation</button>
-    <p id="donationResult"></p>
+    <div id="mainContent">
+      <center>
+        <b>Wallet ID</b>: 0xBC1D83d2071bcBed8757a4B6Dc4fc5641A9bB28B
+        <p>
+          Wallet Balance:
+          <span id="total_donation">PLEASE CONNECT WALLET TO SHOW TOTAL DONATION</span>/200 Ether
+        </p>
+        <br />
+        <hr />
+      </center>
+
+      <br />
+
+      <p>Wallet Address: <span id="wallet">Not Connected</span></p>
+      <p>Your Balance: <span id="balance">PLEASE CONNECT WALLET TO SHOW BALANCE</span> Ether</p>
+
+      <h3>Make a Donation</h3>
+      <input type="number" id="amount" placeholder="Amount in ETH" />
+      <button id="donate">Donate</button>
+      <p id="donateMessage">Click On <b>Donate</b>!</p>
+
+      <h3>Check Your Donation</h3>
+      <input type="text" id="checkAddress" placeholder="Enter Wallet Address" />
+      <button id="checkDonation">Check Donation</button>
+      <p id="donationResult">Click On <b>Check Donation</b>!</p>
+    </div>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
