@@ -6,11 +6,16 @@
 }
 
 body {
-  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  background: linear-gradient(to right, rgba(248, 249, 250, 1),rgba(233, 236, 239, 1), rgba(233, 236, 239, 0.5)),
+              url('https://img.freepik.com/premium-photo/poor-child-studying-home_75648-874.jpg');
+  background-size: cover;  /* Ensures the image covers the entire screen */
+  background-position: center center; /* Centers the image */
+  background-attachment: fixed;
   color: #212529;
   padding: 20px;
   line-height: 1.6;
 }
+
 
 h1, h2 {
   text-align: center;
@@ -22,16 +27,20 @@ h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-bottom: 0%;
 }
 
 h2 {
   color: #343a40;
   font-size: 1.8rem;
+  text-align: center;
   border-bottom: 2px solid #007bff;
-  display: inline-block;
   margin-bottom: 30px;
 }
-
+h4{
+  font-weight: 100;
+  font-style: italic;
+}
 button {
   background-color: #007bff;
   color: #fff;
@@ -87,13 +96,19 @@ span {
 
 #donationResult,
 #donateMessage {
+  max-width: 400px;
   margin-top: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #f8f9fa;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(208, 255, 1, 0.5));
+  border: 1px solid black;
   color: #495057;
   font-size: 1rem;
   word-break: break-word;
+}
+
+#mainContent {
+  display: none;
 }
 
 .container {
