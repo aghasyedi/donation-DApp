@@ -1,4 +1,6 @@
-# Donation DApp
+# Future Minds Foundation
+
+**Empowering Minds, Shaping Futures**
 
 A simple decentralized application (DApp) for making and checking donations on the Ethereum blockchain. This project uses Python, Flask, Solidity, and Web3.js to create a seamless interface for interacting with smart contracts on the blockchain.
 
@@ -134,5 +136,8 @@ donation-dapp/
 ```
 
 ## Screenshots
+1. **Login/Connect Wallet Page**
 ![01](https://github.com/user-attachments/assets/ed44b693-ef71-4725-9cf6-ca0956358c71)
+
+2. **Main Page**
 ![02](https://github.com/user-attachments/assets/09daa045-8024-4c65-8c04-2992a12d3a07)
